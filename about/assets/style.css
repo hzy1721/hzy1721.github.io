@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.project-item {
+  display: inline-block;
+  width: 260px;
+  background-color: rgb(240, 249, 255);
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: rgb(2, 132, 199);
+  margin-bottom: 16px;
+  margin-right: 8px;
+}
+
+.project-item > .title {
+  font-weight: bold;
+}
+
+.project-item > .desc,
+.project-item > .link {
+  font-size: 14px;
+}
+
+.project-item > .desc {
+  margin: 5px 0;
+}

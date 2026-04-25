@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <link rel="alternate icon" type="image/png" href="/img/favicon.png">
+    <title>Zhe | FE Dev</title>
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+    <body>
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="logo" href="/">Zhe</a>
+    <a class="go-home" href="/">
+        <svg width="8" height="14" viewBox="0 0 8 14">
+            <path d="M7 1L1 7l6 6" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+</div>
+                
+                <div class="post-main">
+
+    
+        <div class="post-main-title">
+            DeepSeek V4
+        </div>
+        <div class="post-meta">
+            2026-04-25
+        </div>
+    
+
+    <div class="post-md">
+        <p>昨天 (2026.4.24) DeepSeek 发布了 V4 版本，包括专业版 Pro 和轻量版 Flash、都支持 1M 上下文和深度思考，在 Agent 能力、知识和推理方面有显著提升。</p>
+<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><table>
+<thead>
+<tr>
+<th>模型</th>
+<th>上下文长度</th>
+<th>深度思考</th>
+<th>参数</th>
+<th>激活参数</th>
+<th>预训练数据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>pro</td>
+<td>1M</td>
+<td>支持</td>
+<td>1.6T</td>
+<td>49B</td>
+<td>33T</td>
+</tr>
+<tr>
+<td>flash</td>
+<td>1M</td>
+<td>支持</td>
+<td>284B</td>
+<td>13B</td>
+<td>32T</td>
+</tr>
+</tbody></table>
+<h2 id="模型评测"><a href="#模型评测" class="headerlink" title="模型评测"></a>模型评测</h2><ul>
+<li>评测领域：Agent 能力、知识、推理</li>
+<li>pro 模型：<ul>
+<li>三个领域都领先或持平开源模型、持平或落后闭源模型</li>
+</ul>
+</li>
+<li>flash 模型：<ul>
+<li>Agent 能力：简单任务持平 pro、复杂任务有差距</li>
+<li>知识：稍落后 pro</li>
+<li>推理：接近 pro</li>
+</ul>
+</li>
+</ul>
+<p><img src="/images/bench.webp"></p>
+<h2 id="DSA-稀疏注意力"><a href="#DSA-稀疏注意力" class="headerlink" title="DSA 稀疏注意力"></a>DSA 稀疏注意力</h2><p>V4 开创了一种新的注意力机制：DSA 稀疏注意力 (DeepSeek Sparse Attention)，用于实现 1M 长上下文、相比传统方法降低了对计算和显存的要求。</p>
+<p><img src="/images/dsa.webp"></p>
+<h2 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h2><ul>
+<li>Web&#x2F;App：免费使用，快速模式对应 flash、专家模式对应 pro，都支持设置深度思考</li>
+<li>API 接口：<ul>
+<li>支持 Anthropic 和 OpenAI 格式</li>
+<li>模型名：<code>deepseek-v4-flash</code>，<code>deepseek-v4-pro</code></li>
+<li><code>reasoning_effort</code> 参数设置思考强度 high&#x2F;max</li>
+</ul>
+</li>
+</ul>
+<h2 id="更多资料"><a href="#更多资料" class="headerlink" title="更多资料"></a>更多资料</h2><ul>
+<li>公众号：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/8bxXqS2R8Fx5-1TLDBiEDg">https://mp.weixin.qq.com/s/8bxXqS2R8Fx5-1TLDBiEDg</a></li>
+<li>技术报告：<a target="_blank" rel="noopener" href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf">https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf</a></li>
+</ul>
+
+    </div>
+
+</div>
+                <div class="footer">
+    <span>Copyright © 2022 Zhe</span>
+    <span>Theme Designed By <a target="_blank" href="https://zheli.design/one-paper">這Li</a></span>
+</div>
+
+
+<link rel="stylesheet" href="/css/a11y-dark.min.css">
+
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/highlightjs-line-numbers.js"></script>
+
+
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+        </div>
+    </body>
+</html>

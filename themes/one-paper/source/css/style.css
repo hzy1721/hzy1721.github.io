@@ -346,3 +346,61 @@ a
     color: var(--font-color-0);
     transition: color ease-in-out .5s;
 }
+
+
+.taxonomy-page
+{
+    margin-bottom: 48px;
+}
+.taxonomy-page .category-list-child
+{
+    padding-left: 24px;
+}
+.taxonomy-page .category-list-item,
+.taxonomy-page .tag-list-item
+{
+    padding: 8px 0;
+}
+.taxonomy-page .category-list-count,
+.taxonomy-page .tag-list-count
+{
+    margin-left: 12px;
+    color: var(--font-color-3);
+    font-size: 0.875rem;
+}
+.taxonomy-page .tag-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+}
+.taxonomy-empty,
+.taxonomy-back
+{
+    margin: 12px 0 24px;
+}
+.post-taxonomy
+{
+    margin-top: 8px;
+    font-size: 0.875rem;
+    color: var(--font-color-2);
+}
+.post-taxonomy-row
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    overflow-wrap: anywhere;
+}
+.post-taxonomy a,
+.taxonomy-back a,
+.taxonomy-page a
+{
+    color: var(--font-color-2);
+}
+.post-taxonomy a:hover,
+.taxonomy-back a:hover,
+.taxonomy-page a:hover
+{
+    color: var(--font-color-0);
+}

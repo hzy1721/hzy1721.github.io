@@ -7,6 +7,7 @@
             <a class="read-more" href="<%- url_for(post.path) %>"> ... </a>
         </div>
         <div class="post-date"><%- date(post.date, "YYYY.MM.DD") %></div>
+        <%- partial('_partial/post-taxonomy', { post: post }) %>
     </div>
     <% }) %>
 </div>

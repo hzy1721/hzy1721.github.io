@@ -1,3 +1,7 @@
+<% if (is_category() || is_tag()) { %>
+    <h1 class="post-main-title"><%= is_category() ? '分类：' + page.category : '标签：' + page.tag %></h1>
+    <p class="taxonomy-back"><a href="<%- url_for(is_category() ? config.category_dir + '/' : config.tag_dir + '/') %>">查看全部<%= is_category() ? '分类' : '标签' %></a></p>
+<% } %>
 <div class="archive-list">
     <ul class="archive">
         <% page.posts.each(function (post) { %>

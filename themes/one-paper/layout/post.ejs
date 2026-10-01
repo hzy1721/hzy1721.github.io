@@ -6,6 +6,7 @@
         </div>
         <div class="post-meta">
             <%- date(page.date, "YYYY-MM-DD") %>
+            <%- partial('_partial/post-taxonomy', { post: page }) %>
         </div>
     <% } %>
 

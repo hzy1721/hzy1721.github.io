@@ -1,0 +1,20 @@
+<% if (post.categories.length || post.tags.length) { %>
+    <div class="post-taxonomy">
+        <% if (post.categories.length) { %>
+            <div class="post-taxonomy-row">
+                <span>分类：</span>
+                <% post.categories.each(function (category) { %>
+                    <a href="<%- url_for(category.path) %>"><%= category.name %></a>
+                <% }) %>
+            </div>
+        <% } %>
+        <% if (post.tags.length) { %>
+            <div class="post-taxonomy-row">
+                <span>标签：</span>
+                <% post.tags.each(function (tag) { %>
+                    <a href="<%- url_for(tag.path) %>">#<%= tag.name %></a>
+                <% }) %>
+            </div>
+        <% } %>
+    </div>
+<% } %>

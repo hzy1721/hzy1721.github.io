@@ -1,6 +1,8 @@
 ---
 title: DeepSeek V4
 date: 2026-04-25 17:17:00
+categories:
+  - 基模
 tags:
 ---
 

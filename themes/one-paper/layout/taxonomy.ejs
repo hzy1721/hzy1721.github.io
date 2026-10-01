@@ -1,0 +1,16 @@
+<section class="taxonomy-page">
+    <h1 class="post-main-title"><%= page.title %></h1>
+    <% if (page.taxonomy === 'categories') { %>
+        <% if (site.categories.length) { %>
+            <%- list_categories({ show_count: true }) %>
+        <% } else { %>
+            <p class="taxonomy-empty">暂无分类</p>
+        <% } %>
+    <% } else { %>
+        <% if (site.tags.length) { %>
+            <%- list_tags({ show_count: true }) %>
+        <% } else { %>
+            <p class="taxonomy-empty">暂无标签</p>
+        <% } %>
+    <% } %>
+</section>

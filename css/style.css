@@ -150,13 +150,20 @@ a
     margin-bottom: 48px;
     border-bottom: 1px dashed var(--line-2);
 }
+.post-title-row
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
 .post-title
 {
     display: inline-block;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.5;
-    margin-bottom: 12px;
+    min-width: 0;
     color: var(--font-color-1);
     /*transition: color ease-in-out .5s;*/
 }
@@ -164,6 +171,19 @@ a
 {
     color: var(--font-color-0);
     transition: color ease-in-out .5s;
+}
+.post-sticky
+{
+    display: inline-block;
+    flex-shrink: 0;
+    padding: 1px 8px;
+    border: 1px solid var(--line-2);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    white-space: nowrap;
+    color: var(--font-color-0);
+    background: var(--bg-color-1);
 }
 .post-except
 {
@@ -345,4 +365,62 @@ a
 {
     color: var(--font-color-0);
     transition: color ease-in-out .5s;
+}
+
+
+.taxonomy-page
+{
+    margin-bottom: 48px;
+}
+.taxonomy-page .category-list-child
+{
+    padding-left: 24px;
+}
+.taxonomy-page .category-list-item,
+.taxonomy-page .tag-list-item
+{
+    padding: 8px 0;
+}
+.taxonomy-page .category-list-count,
+.taxonomy-page .tag-list-count
+{
+    margin-left: 12px;
+    color: var(--font-color-3);
+    font-size: 0.875rem;
+}
+.taxonomy-page .tag-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+}
+.taxonomy-empty,
+.taxonomy-back
+{
+    margin: 12px 0 24px;
+}
+.post-taxonomy
+{
+    margin-top: 8px;
+    font-size: 0.875rem;
+    color: var(--font-color-2);
+}
+.post-taxonomy-row
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    overflow-wrap: anywhere;
+}
+.post-taxonomy a,
+.taxonomy-back a,
+.taxonomy-page a
+{
+    color: var(--font-color-2);
+}
+.post-taxonomy a:hover,
+.taxonomy-back a:hover,
+.taxonomy-page a:hover
+{
+    color: var(--font-color-0);
 }

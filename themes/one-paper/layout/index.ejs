@@ -1,7 +1,12 @@
 <div class="post-list">
     <% page.posts.each(function (post) { %>
     <div class="post">
-        <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+        <div class="post-title-row">
+            <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+            <% if (post.sticky > 0) { %>
+            <span class="post-sticky">置顶</span>
+            <% } %>
+        </div>
         <div class="post-except">
             <%- strip_html(post.content).substr(0, 240) %>
             <a class="read-more" href="<%- url_for(post.path) %>"> ... </a>

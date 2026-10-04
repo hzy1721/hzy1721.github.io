@@ -150,13 +150,20 @@ a
     margin-bottom: 48px;
     border-bottom: 1px dashed var(--line-2);
 }
+.post-title-row
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
 .post-title
 {
     display: inline-block;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.5;
-    margin-bottom: 12px;
+    min-width: 0;
     color: var(--font-color-1);
     /*transition: color ease-in-out .5s;*/
 }
@@ -164,6 +171,19 @@ a
 {
     color: var(--font-color-0);
     transition: color ease-in-out .5s;
+}
+.post-sticky
+{
+    display: inline-block;
+    flex-shrink: 0;
+    padding: 1px 8px;
+    border: 1px solid var(--line-2);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    white-space: nowrap;
+    color: var(--font-color-0);
+    background: var(--bg-color-1);
 }
 .post-except
 {
